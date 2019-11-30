@@ -1,8 +1,5 @@
 {
   "name": "hardikm-cirkleinc/cibler",
-  "require": {
-         "hardikm-cirkleinc/cibler": "dev-master"
-  },
   "description": "Cibler context extension for magento2",
   "type": "magento2-module",
   "version": "1.0.0",
