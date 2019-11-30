@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+	<event name="sales_order_save_after">
+		<observer name="send_order_cibler" instance="Cibler\Shop\Observer\SendOrderCibler"/>
+	</event>
+	<event name="controller_action_predispatch_checkout_cart_couponPost">
+		<observer name="check_coupon_cibler_success" instance="Cibler\Shop\Observer\CheckCouponCibler"/>
+	</event>
+	<event name="check_coupon_success">
+		<observer name="check_coupon_cibler_success" instance="Cibler\Shop\Observer\CheckCouponCibler"/>
+	</event>
+	<event name="customer_register_success">
+		<observer name="create_account_cibler" instance="Cibler\Shop\Observer\CreateAccountCibler"/>
+	</event>
+</config>
