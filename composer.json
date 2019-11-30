@@ -1,23 +1,20 @@
 {
-  "name": "hardikm-cirkleinc/cibler",
-  "description": "Cibler context extension for magento2",
-  "type": "magento2-module",
-  "version": "1.0.0",
-  "license": "OSL-3.0",
-  "minimum-stability": "dev",
-  "authors": [
-    {
-      "name": "cibler",
-      "email": "support@cibler.com",
-      "role": "Developer"
-    }
-  ],
-  "autoload": {
-    "files": [
-      "registration.php"
+    "name": "hardikm-cirkleinc/cibler",
+    "description": "Cibler context extension for magento2",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+          "name": "cibler",
+          "email": "support@cibler.com"
+        }
     ],
-    "psr-4": {
-      "Cibler\\Shop\\": ""
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Cibler\\Shop\\": ""
+        }
     }
-  }
-}
